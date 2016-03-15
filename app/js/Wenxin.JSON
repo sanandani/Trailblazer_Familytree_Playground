@@ -1,0 +1,120 @@
+{
+   "people": [
+      {
+         "id": "c24e2d16-5399-4872-a578-7150c60b7a36",
+         "href": "https://cmu.trustedfamily.net/api/genealogy/people/c24e2d16-5399-4872-a578-7150c60b7a36",
+         "preview": {
+            "name": "Wenxin",
+            "description": "",
+            "thumbnail": null,
+            "icon": "profile"
+         },
+         "birthdate": "1990-05-16",
+         "deceased": false,
+         "deceased_date": null,
+         "registered": false,
+         "links": {
+            "profile": {
+               "id": "c24e2d16-5399-4872-a578-7150c60b7a36",
+               "href": "https://cmu.trustedfamily.net/api/resources/c24e2d16-5399-4872-a578-7150c60b7a36",
+               "type": "resources"
+            },
+            "families": null,
+            "parents": {
+               "ids": [
+                  "8f576004-8afc-4025-9a59-087f7a41a2ff"
+               ],
+               "href": "https://cmu.trustedfamily.net/api/genealogy/people?ids={people.parents}",
+               "type": "people"
+            },
+            "children": {
+               "ids": [
+                  "8274fca8-d26b-4f02-93a8-cf4784b245a5"
+               ],
+               "href": "https://cmu.trustedfamily.net/api/genealogy/people?ids={people.children}",
+               "type": "people"
+            },
+            "pairings": null,
+            "partners": null
+         }
+      }
+   ],
+   "linked": {
+      "families": [],
+      "pairings": [],
+      "people": [
+         {
+            "id": "8f576004-8afc-4025-9a59-087f7a41a2ff",
+            "href": "https://cmu.trustedfamily.net/api/genealogy/people/8f576004-8afc-4025-9a59-087f7a41a2ff",
+            "preview": {
+               "name": "Karan Bajaj",
+               "description": "",
+               "thumbnail": null,
+               "icon": "profile"
+            },
+            "birthdate": "1989-09-22",
+            "deceased": false,
+            "deceased_date": null,
+            "registered": true,
+            "links": {
+               "profile": {
+                  "id": "8f576004-8afc-4025-9a59-087f7a41a2ff",
+                  "href": "https://cmu.trustedfamily.net/api/resources/8f576004-8afc-4025-9a59-087f7a41a2ff",
+                  "type": "resources"
+               },
+               "families": null,
+               "parents": null,
+               "children": {
+                  "ids": [
+                     "a88bff25-667e-4fd4-9397-2159675217b2",
+                     "c24e2d16-5399-4872-a578-7150c60b7a36"
+                  ],
+                  "href": "https://cmu.trustedfamily.net/api/genealogy/people?ids={people.children}",
+                  "type": "people"
+               },
+               "pairings": null,
+               "partners": null
+            }
+         },
+         {
+            "id": "8274fca8-d26b-4f02-93a8-cf4784b245a5",
+            "href": "https://cmu.trustedfamily.net/api/genealogy/people/8274fca8-d26b-4f02-93a8-cf4784b245a5",
+            "preview": {
+               "name": "Mewanmawroh",
+               "description": "",
+               "thumbnail": null,
+               "icon": "profile"
+            },
+            "birthdate": null,
+            "deceased": false,
+            "deceased_date": null,
+            "registered": false,
+            "links": {
+               "profile": {
+                  "id": "8274fca8-d26b-4f02-93a8-cf4784b245a5",
+                  "href": "https://cmu.trustedfamily.net/api/resources/8274fca8-d26b-4f02-93a8-cf4784b245a5",
+                  "type": "resources"
+               },
+               "families": null,
+               "parents": {
+                  "ids": [
+                     "c24e2d16-5399-4872-a578-7150c60b7a36"
+                  ],
+                  "href": "https://cmu.trustedfamily.net/api/genealogy/people?ids={people.parents}",
+                  "type": "people"
+               },
+               "children": {
+                  "ids": [
+                     "87761069-96e9-4b98-930c-28ad1de1e877",
+                     "52d19bc1-9ae2-45d5-9cb6-5d9211d6abed"
+                  ],
+                  "href": "https://cmu.trustedfamily.net/api/genealogy/people?ids={people.children}",
+                  "type": "people"
+               },
+               "pairings": null,
+               "partners": null
+            }
+         }
+      ]
+   }
+}
