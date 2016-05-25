@@ -1,4 +1,4 @@
-/* Most of fields are for informational purpose only, such as the name, description, author, and the repository.
+Most of fields are for informational purpose only, such as the name, description, author, and the repository.
 Dependencies (We have defined dependencies in bower.json)
 The dependencies field describes the runtime library dependencies that your project has, meaning the libraries your project needs to run properly in a browser.
 - For example, d3 is the name that D3 library is published under in the NPM repository. 

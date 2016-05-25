@@ -1,25 +1,25 @@
 [
   {
-    "name": "Top Level",
+    "name": "Eduardo Miranda",
     "parent": "null",
     "children": [
       {
-        "name": "Level 2: A",
-        "parent": "Top Level",
+        "name": "Shubham Anandani",
+        "parent": "Eduardo Miranda",
         "children": [
           {
-            "name": "Son of A",
-            "parent": "Level 2: A"
+            "name": "Mewan",
+            "parent": "Shubham Anandani"
           },
           {
-            "name": "Daughter of A",
+            "name": "Wenxin",
             "parent": "Level 2: A"
           }
         ]
       },
       {
-        "name": "Level 2: B",
-        "parent": "Top Level"
+        "name": "Karan Bajaj",
+        "parent": "Eduardo Miranda"
       }
     ]
   }

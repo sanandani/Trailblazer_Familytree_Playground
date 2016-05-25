@@ -1,7 +1,5 @@
-
-
 // ************** Generate the tree diagram  *****************
-var margin = {top: 20, right: 120, bottom: 20, left: 120},
+var margin = {top: 20, right: 100,bottom: 20, left: 400},
  width = 960 - margin.right - margin.left,
  height = 500 - margin.top - margin.bottom;
  
@@ -46,13 +44,19 @@ function update(source) {
    .attr("transform", function(d) { 
     return "translate(" + d.y + "," + d.x + ")"; });
 
-  nodeEnter.append("circle")
-   .attr("r", 10)
-   .style("fill", "#fff");
+  nodeEnter.append("rect")
+    .attr("rx", 6)
+    .attr("ry", 6)
+    .attr("x", -12.5)
+    .attr("y", -12.5)
+    .attr("width", 120)
+    .attr("height", 75)
+    .attr("transform", function(d, i) { return "scale(" + (1 - d / 25) * 20 + ")"; })
+    .style("fill", d3.scale.category20c());
 
   nodeEnter.append("text")
    .attr("x", function(d) { 
-    return d.children || d._children ? -13 : 13; })
+    return d.children || d._children ? 100 : 15; })
    .attr("dy", ".35em")
    .attr("text-anchor", function(d) { 
     return d.children || d._children ? "end" : "start"; })
