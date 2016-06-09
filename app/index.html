@@ -19,44 +19,49 @@
   </div>
 
 
-  <svg width="200" height="200">
+  <svg width="500" height="200">
     <defs>
-      <pattern id="p1" patternUnits="userSpaceOnUse" x="50"y="50" height="100" width="100">
+       <pattern id="f" patternUnits="userSpaceOnUse" x="50" y="50" height="100" width="100">
+        <image x="0" y="10" height="90" width="100" xlink:href="image/female_avatar.png"></image>
+      </pattern>
+       <pattern id="m" patternUnits="userSpaceOnUse" x="50" y="50" height="100" width="100">
+        <image x="0" y="10" height="90" width="100" xlink:href="image/male_avatar.jpeg"></image>
+      </pattern>
+      <pattern id="p1" patternUnits="userSpaceOnUse" x="50" y="50" height="100" width="100">
         <image x="0" y="0" height="100" width="100" xlink:href="image/eliza.jpeg"></image>
+      </pattern>
+      <pattern id="p2" patternUnits="userSpaceOnUse" x="50" y="50" height="100" width="100">
+        <image x="0" y="0" height="100" width="100" xlink:href="image/george.jpg"></image>
       </pattern>
     </defs>
 
-    <g transform="translate(50,50)">
-      <circle  r="50" fill="rgb(214, 39, 40)"; stroke="rgb(149, 27, 28)" fill-opacity="0.4" />
-      <text  y="60" text-anchor="middle" dy="0.2em">Female No Picture</text>
+    <g transform="translate(50,51)"> 
+      <circle  r="50" fill="url(#f)"; stroke="rgb(149, 27, 28)" fill-opacity="0.4" stroke-width="1" />
+      <text  y="70" text-anchor="middle"  font-family="Helvetica" 
+        font-size="14" text-length="40" text-overflow="ellipsis">unknown</text>
      </g>
 
-    <g transform="translate(150,50)">
-      <rect width="100" height="100" style="fill:rgb(0,0,255);stroke-width:3;stroke:rgb(0,0,0);visibility:hidden" />
+    <g transform="translate(160,51)">
+      <rect x="-50" y = "-50" width="100" height="150" style="fill:none;stroke-width:1;stroke:grey;" />
       <circle  r="50" fill="url(#p1)" stroke="rgb(149, 27, 28)" fill-opacity="0.9" stroke-width="1"/>
       <text  y="70" text-anchor="middle"  font-family="Helvetica" 
-        font-size="14" text-length="40" text-overflow="ellipsis">Queen Elizabeth II </text>
+        font-size="14" text-length="40" text-overflow="ellipsis">Elizabeth II </text>
          <text  y="90" text-anchor="middle"  font-family="Helvetica" 
         font-size="14" text-length="40" text-overflow="ellipsis">1922-</text>
     </g>
 
- </svg>
-
-   <svg width="200" height="200">
-  <defs>
-    <pattern id="p2" patternUnits="userSpaceOnUse" height="200" width="200">
-      <image x="50" y="50" height="100" width="100" xlink:href="image/victoria.jpeg"></image>
-    </pattern>
-  </defs>
-  <g>
-  <circle cx="100" cy="100" r="50" fill="url(#p2)" stroke="rgb(149, 27, 28)" fill-opacity="0.3" />
- <circle cx="160" cy="100" r="10" fill="none" stroke="rgb(149, 27, 28)"  >
-  <line x1="0" y1="0" x2="200" y2="200" style="stroke:rgb(255,0,0);stroke-width:2" />
-
-</circle>
-  
-  <text  x="100" y="170" text-anchor="middle" >Queen Victoria</text>
-</g>
+     <g transform="translate(270,51)">
+     <circle  r="50" fill="url(#p2)" stroke="rgb(21, 83, 125)" fill-opacity="0.9" stroke-width="1"/>
+        <text  y="70" text-anchor="middle"  font-family="Helvetica" 
+        font-size="14" text-length="40" text-overflow="ellipsis">George Freder... </text>
+         <text  y="90" text-anchor="middle"  font-family="Helvetica" 
+        font-size="14" text-length="40" text-overflow="ellipsis">1965-1936</text>
+    </g>
+    <g transform="translate(380,51)"> 
+      <circle  r="50" fill="url(#m)"; stroke="rgb(21, 83, 125)" fill-opacity="0.4" stroke-width="1" />
+      <text  y="70" text-anchor="middle"  font-family="Helvetica" 
+        font-size="14" text-length="40" text-overflow="ellipsis">unknown</text>
+     </g>
  </svg>
   <!-- load the jquery library -->
   <script type="text/javascript" src="bower_components/jQuery/dist/jquery.min.js"></script>
